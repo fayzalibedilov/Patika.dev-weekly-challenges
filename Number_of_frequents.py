@@ -4,7 +4,6 @@ def frequent(arr):
     for i in arr:
         d[i] = arr.count(i)
         j = max(d)
-    if d[j] < 1:
-        return 0
-    else:
-        return d[j]
+    if j != 1:
+        return j
+    return 0
